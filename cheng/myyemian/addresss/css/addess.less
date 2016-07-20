@@ -1,0 +1,43 @@
+#addess{
+    height: 100%;
+    background-color: #f1f2f3;
+}
+li{
+    height: 90px;
+    background-color: #fff;
+    padding: 0 3%;
+    border: 1px solid #e4e5e6;
+    .content{
+        width: 89%;
+        padding: 3% 0;
+        display: inline-block;
+        font-size: 1.6rem;
+        p:last-child{
+            padding-top: 3%;
+        }
+    }
+}
+a{
+    width: 100%;
+    display: block;
+    color: #000;
+}
+a:after{
+    content: '';
+    width: 3%;
+    height: 90px;
+    line-height: 90px;
+    float: right;
+    display: inline-block;
+    background: url('../img/my-4.png') center no-repeat;
+    background-size: 100%;
+}
+li:first-child{
+    p:last-child:before{
+        content: '[默认]';
+        color: #ed9500;
+    }
+}
+li:nth-of-type(n+2){
+    margin-top: 3%;
+}

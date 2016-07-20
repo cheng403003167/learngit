@@ -1,0 +1,197 @@
+html,
+body {
+  width: 100%;
+}
+.homeheader {
+  width: 100%;
+  height: 40px;
+  background-color: #f29004;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.homeheader p {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 40px;
+  width: 97%;
+  margin: auto;
+  position: relative;
+}
+.homeheader p a {
+  display: inline-block;
+}
+.homeheader p a:nth-of-type(1) {
+  height: 40px;
+  padding-right: 40px;
+  position: absolute;
+  left: 0;
+  background: url(../img/sou-14.png) no-repeat;
+  background-size: 15px 20%;
+  background-position: 100% center;
+  font-size: 1.5rem;
+  text-align: left;
+  color: #fff;
+}
+.homeheader p a:nth-of-type(2) {
+  width: 100%;
+}
+.homeheader p a:nth-of-type(3) {
+  width: 10px;
+  height: 40px;
+  padding-left: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../img/sou-15.png) no-repeat;
+  background-size: 20px 60%;
+  background-position: right center;
+}
+.otherheader p {
+  position: relative;
+}
+.otherheader p a:nth-of-type(1) {
+  background: url(../img/dl-4.png) no-repeat;
+  background-size: 15px 50%;
+  background-position: left center;
+  position: absolute;
+}
+.otherheader p a:nth-of-type(2) {
+  width: 100%;
+}
+.sellheader {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.sellheader p {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 40px;
+  width: 97%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+.sellheader p a {
+  height: 100%;
+  position: absolute;
+}
+.sellheader p a:nth-of-type(1) {
+  padding-right: 20px;
+  left: 0;
+  background: url(../img/dl-4.png) center no-repeat;
+  background-size: 80%;
+}
+.sellheader p a:nth-of-type(2) {
+  padding-right: 40px;
+  right: 14%;
+  background: url(../img/selldetail-1.png) no-repeat;
+  background-size: 90%;
+  background-position: left center;
+}
+.sellheader p a:last-child {
+  padding-right: 40px;
+  right: 0%;
+  background: url(../img/selldetail-2.png) no-repeat;
+  background-size: 90%;
+  background-position: left center;
+}
+.sw {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.sw .inn {
+  width: 600%;
+  height: 40%;
+  position: relative;
+}
+.sw .inn img {
+  width: 16.666666666666668%;
+  float: left;
+}
+.sw .dot {
+  width: 100%;
+  height: 13%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.sw .dot span {
+  border-radius: 100px;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+}
+/************小圆点的背景色开始**************************/
+.backcol1 {
+  background-color: #ccc;
+}
+.backcol2 {
+  background-color: #f1995a;
+}
+/************小圆点的背景色结束**************************/
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #FFFFFF;
+}
+footer .inn {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  background-color: #FFFFFF;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+footer .inn a {
+  width: 20%;
+  float: left;
+}
+footer .inn a span {
+  width: 100%;
+  display: block;
+}
+footer .inn a:before {
+  content: '';
+  width: 40px;
+  height: 30px;
+  margin-top: 7%;
+  display: inline-block;
+  background: url('../img/sou-foot2.png') no-repeat;
+  background-size: 500% 200%;
+}
+footer .inn a:nth-of-type(1):before {
+  background-position-x: -2%;
+}
+footer .inn a:nth-of-type(2):before {
+  background-position-x: 22%;
+}
+footer .inn a:nth-of-type(3):before {
+  background-position-x: 45%;
+}
+footer .inn a:nth-of-type(4):before {
+  background-position-x: 70%;
+}
+footer .inn a:nth-of-type(5):before {
+  background-position-x: 93%;
+}
+.textcol1 {
+  color: #000;
+}
+footer .inn .textcol1:before {
+  background-position-y: 0;
+}
+.textcol2 {
+  color: #f29004;
+}
+footer .inn .textcol2:before {
+  background-position-y: -30px;
+}
+/*# sourceMappingURL=gong.css.map */

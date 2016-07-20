@@ -1,0 +1,28 @@
+#collect {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+#collect .conn {
+  background-color: #fff;
+}
+#collect .conn li {
+  padding: 3%;
+  display: block;
+  border-bottom: 1px solid #e7e8e9;
+}
+#collect .conn li img {
+  width: 25%;
+  float: left;
+  margin-right: 3%;
+  border: 1px solid #eff0f1;
+}
+#collect .conn li p {
+  overflow: hidden;
+  font-size: 1.6rem;
+}
+#collect .conn li p:nth-of-type(2) {
+  color: red;
+  margin-top: 3%;
+}
+/*# sourceMappingURL=mycollect.css.map */

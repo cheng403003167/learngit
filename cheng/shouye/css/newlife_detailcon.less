@@ -1,0 +1,180 @@
+#main{ 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #f1f2f3;
+    .top{
+        overflow: hidden;
+        .nav{
+            width: 100%;
+            .sellheader{
+                background: -webkit-linear-gradient(#555 0%,#d7e4e8 100%);
+                opacity: 0.5;
+                p{
+                    a:nth-of-type(2){
+                        display: none;
+                    }
+                }
+            }
+        }
+        img{
+            width: 100%;
+            margin: auto;
+            float: left;
+        }
+    }
+    .name{
+        background-color: #FFF;
+        p{
+            width: 95%;
+            margin: auto;
+            padding: 1% 0;
+            font-size: 1.4rem;
+            color: #57585a;
+            font-size: 1.7rem;
+        }
+        p:first-child{
+            color: #000;
+            padding-top: 2%;
+        }
+        p:last-child{
+            line-height: 2rem;
+            span:last-child{
+                float: right;
+            }
+        }
+    } 
+    .bottom{
+        margin: 3% 0;
+        padding: 3%;
+        background-color: #fff;
+        img{
+            width: 20%;
+            float: left;
+            margin-right: 3%;
+        }
+        .img-4{
+            width: 100%;
+        }
+        .newlife_com{
+            overflow: hidden;
+            p{
+                font-size: 1.3rem;
+            }
+            p:first-child{
+                font-size: 1.5rem;
+                margin-bottom: 3%;
+            }
+            p:last-child{
+                background: url(../img/newlife_con-3.png) left center no-repeat;
+                background-size: 5%;
+                text-indent: 1.5rem;
+            }
+        }
+    }
+    .foot{
+        height: 60px;
+        background-color: #fff;
+        .inn{
+            width: 100%;
+            height: 60px;
+            padding: 0 2.5%;
+            position: fixed;
+            bottom: 0;
+            background-color: #f1f2f3;
+            .shopping{
+                display: inline-block;
+                width: 62px;
+                height: 60px;
+                background: url(../img/selldetail-5.png) left center no-repeat;
+                background-size: 80%;
+            }
+            .shop{
+                width: 70%;
+                float: right;
+                a{
+                    width: 40%;
+                    margin: 0 4%;
+                    padding: 3% 0;
+                    color: #fff;
+                    border-radius: 5px;
+                    font-size: 1.5rem;
+                    display: inline-block;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+                a:first-child{
+                    background-color: #e69633;
+                }
+                a:last-child{
+                    background-color: #e93b49;
+                }
+            }
+            .shop:after{
+                content: '';
+                display: inline-block;
+                height: 60px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .share{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 200;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        .sharecon{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 37%;
+            background-color: #fff;
+            text-align: center;
+            .sharetop{
+                font-size: 2rem;
+                padding: 2%;
+            }
+            .shareposition{
+                height: 50%;
+                a{
+                    display: inline-block;
+                    width: 100/3%;
+                    height: 100%;
+                    float: left;
+                    color: #000;
+                    font-size: 1.5rem;
+                }
+                a:before{
+                    content: '';
+                    width: 50%;
+                    height: 70%;
+                    display: block;
+                    margin: auto;
+                    background: url(../img/selldetail-8.png) left no-repeat;
+                    background-size: 300%;
+                }
+                a:nth-of-type(2):before{
+                    background-position: center;
+                }
+                a:nth-of-type(3):before{
+                    background-position: right;
+                }
+            }
+            .shareCancel{
+                width: 80%;
+                margin: 3% auto 0;
+                display: block;
+                font-size: 2rem;
+                color: #000;
+                padding: 2%;
+                background-color: #cbcccd;
+                border-radius: 10px;
+                letter-spacing: 2rem;
+                text-indent: 2rem;
+            }
+        }
+    }
+}

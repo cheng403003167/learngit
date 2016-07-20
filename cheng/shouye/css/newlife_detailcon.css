@@ -1,0 +1,179 @@
+#main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #f1f2f3;
+}
+#main .top {
+  overflow: hidden;
+}
+#main .top .nav {
+  width: 100%;
+}
+#main .top .nav .sellheader {
+  background: -webkit-linear-gradient(#555 0%, #d7e4e8 100%);
+  opacity: 0.5;
+}
+#main .top .nav .sellheader p a:nth-of-type(2) {
+  display: none;
+}
+#main .top img {
+  width: 100%;
+  margin: auto;
+  float: left;
+}
+#main .name {
+  background-color: #FFF;
+}
+#main .name p {
+  width: 95%;
+  margin: auto;
+  padding: 1% 0;
+  font-size: 1.4rem;
+  color: #57585a;
+  font-size: 1.7rem;
+}
+#main .name p:first-child {
+  color: #000;
+  padding-top: 2%;
+}
+#main .name p:last-child {
+  line-height: 2rem;
+}
+#main .name p:last-child span:last-child {
+  float: right;
+}
+#main .bottom {
+  margin: 3% 0;
+  padding: 3%;
+  background-color: #fff;
+}
+#main .bottom img {
+  width: 20%;
+  float: left;
+  margin-right: 3%;
+}
+#main .bottom .img-4 {
+  width: 100%;
+}
+#main .bottom .newlife_com {
+  overflow: hidden;
+}
+#main .bottom .newlife_com p {
+  font-size: 1.3rem;
+}
+#main .bottom .newlife_com p:first-child {
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+}
+#main .bottom .newlife_com p:last-child {
+  background: url(../img/newlife_con-3.png) left center no-repeat;
+  background-size: 5%;
+  text-indent: 1.5rem;
+}
+#main .foot {
+  height: 60px;
+  background-color: #fff;
+}
+#main .foot .inn {
+  width: 100%;
+  height: 60px;
+  padding: 0 2.5%;
+  position: fixed;
+  bottom: 0;
+  background-color: #f1f2f3;
+}
+#main .foot .inn .shopping {
+  display: inline-block;
+  width: 62px;
+  height: 60px;
+  background: url(../img/selldetail-5.png) left center no-repeat;
+  background-size: 80%;
+}
+#main .foot .inn .shop {
+  width: 70%;
+  float: right;
+}
+#main .foot .inn .shop a {
+  width: 40%;
+  margin: 0 4%;
+  padding: 3% 0;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+#main .foot .inn .shop a:first-child {
+  background-color: #e69633;
+}
+#main .foot .inn .shop a:last-child {
+  background-color: #e93b49;
+}
+#main .foot .inn .shop:after {
+  content: '';
+  display: inline-block;
+  height: 60px;
+  vertical-align: middle;
+}
+#main .share {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+#main .share .sharecon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 37%;
+  background-color: #fff;
+  text-align: center;
+}
+#main .share .sharecon .sharetop {
+  font-size: 2rem;
+  padding: 2%;
+}
+#main .share .sharecon .shareposition {
+  height: 50%;
+}
+#main .share .sharecon .shareposition a {
+  display: inline-block;
+  width: 33.333333333333336%;
+  height: 100%;
+  float: left;
+  color: #000;
+  font-size: 1.5rem;
+}
+#main .share .sharecon .shareposition a:before {
+  content: '';
+  width: 50%;
+  height: 70%;
+  display: block;
+  margin: auto;
+  background: url(../img/selldetail-8.png) left no-repeat;
+  background-size: 300%;
+}
+#main .share .sharecon .shareposition a:nth-of-type(2):before {
+  background-position: center;
+}
+#main .share .sharecon .shareposition a:nth-of-type(3):before {
+  background-position: right;
+}
+#main .share .sharecon .shareCancel {
+  width: 80%;
+  margin: 3% auto 0;
+  display: block;
+  font-size: 2rem;
+  color: #000;
+  padding: 2%;
+  background-color: #cbcccd;
+  border-radius: 10px;
+  letter-spacing: 2rem;
+  text-indent: 2rem;
+}
+/*# sourceMappingURL=newlife_detailcon.css.map */

@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+  background-color: #f1f2f3;
+}
+#ser {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#ser .nav {
+  width: 100%;
+  height: 40px;
+}
+#ser .nav a {
+  color: #fff;
+}
+#ser label {
+  color: #a9a9a9;
+}
+#ser p {
+  color: #868788;
+}
+#ser .servicescon {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  font-size: 1.7rem;
+}
+#ser .servicescon .contactinfo {
+  width: 100%;
+  margin: 3% 0;
+}
+#ser .servicescon .contactinfo p {
+  margin-bottom: 3%;
+}
+#ser .servicescon .contactinfo .contactmethod {
+  border: 1px solid #e4e5e6;
+  border-radius: 5px;
+  background-color: #f8f9f9;
+  padding: 0 3%;
+}
+#ser .servicescon .contactinfo .contactmethod label {
+  display: block;
+  padding: 3% 0;
+}
+#ser .servicescon .contactinfo .contactmethod label input {
+  border: 0;
+  background-color: #f8f9f9;
+}
+#ser .servicescon .contactinfo .contactmethod label:nth-of-type(1) {
+  border-bottom: 1px solid #e4e5e6;
+}
+#ser .servicescon .need {
+  margin-top: 10%;
+}
+#ser .servicescon .need p {
+  margin-bottom: 3%;
+}
+#ser .servicescon .need .needcon {
+  width: 100%;
+  border: 1px solid #e4e5e6;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 3%;
+  background-color: #f8f9f9;
+}
+#ser .servicescon .need .needcon input {
+  width: 100%;
+  font-size: 1.7rem;
+  border: 0;
+  background-color: #f8f9f9;
+}
+#ser .servicescon .need .needcon textarea {
+  width: 100%;
+  font-size: 1.7rem;
+  border: 0;
+  background-color: #f8f9f9;
+  line-height: 3rem;
+  resize: none;
+}
+#ser .servicescon .need_description {
+  height: 28%;
+}
+#ser .servicescon .need_description .need_descriptioncon {
+  height: 80%;
+}
+#ser .servicescon .need_description .need_descriptioncon textarea {
+  height: 100%;
+  outline: none;
+}
+#ser .servicescon .lastp {
+  margin-top: 3%;
+  background: url(../img/services-1.png) left center no-repeat;
+  background-size: 5%;
+  text-indent: 2rem;
+  font-size: 1.3rem;
+}
+#ser .servicesfirm {
+  width: 60%;
+  margin: 10% auto;
+  padding: 2%;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #ec9119;
+}
+/*# sourceMappingURL=services.css.map */

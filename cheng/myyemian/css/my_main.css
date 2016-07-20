@@ -1,0 +1,93 @@
+html,
+body {
+  background-color: #f1f2f3;
+}
+.main {
+  position: relative;
+}
+.main .userpic {
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #fff;
+  position: absolute;
+  top: 18%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.main .userpic p {
+  margin-top: 3%;
+}
+.baseinfo {
+  margin-top: 3%;
+  padding-left: 3%;
+  background-color: #feffff;
+  border-top: 1px solid #eaebeb;
+  border-bottom: 1px solid #eaebeb;
+}
+.baseinfo a {
+  display: block;
+  font-size: 1.7rem;
+  color: #000;
+  padding: 2% 3% 2% 0;
+  border-bottom: 1px solid #eaebeb;
+}
+.baseinfo a span {
+  vertical-align: middle;
+}
+.baseinfo a:last-child {
+  border: 0;
+}
+.baseinfo a:before {
+  content: '';
+  width: 7%;
+  height: 2.5rem;
+  display: inline-block;
+  margin: 0.3% 0;
+  margin-right: 3%;
+  background: url(../img/my-1.png) -1% center no-repeat;
+  background-size: 750%;
+  vertical-align: middle;
+}
+.baseinfo a:nth-of-type(2):before {
+  background-position: 15% center;
+}
+.baseinfo a:nth-of-type(3):before {
+  background-position: 30% center;
+}
+.baseinfo a:nth-of-type(4):before {
+  background-position: 45% center;
+}
+.baseinfo a:nth-of-type(5):before {
+  background-position: 58% center;
+}
+.baseinfo a:nth-of-type(6):before {
+  background-position: 72% center;
+}
+.baseinfo a:after {
+  content: '';
+  width: 5%;
+  height: 2.5rem;
+  display: inline-block;
+  background: url(../img/my-4.png) right center no-repeat;
+  background-size: 50%;
+  float: right;
+}
+.set {
+  margin-bottom: 2%;
+}
+.set a:nth-of-type(1):before {
+  background-position: 87% center;
+}
+.set a:nth-of-type(2):before {
+  background-position: 102% center;
+}
+footer .inn a:first-child:before {
+  background-position-y: 0;
+}
+footer .inn a:last-child:before {
+  background-position-y: -30px;
+}
+/*# sourceMappingURL=my_main.css.map */

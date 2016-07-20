@@ -1,0 +1,240 @@
+html,body{
+    background-color: #e5e6e7;
+    height: 100%;
+}
+#mybase{
+    width: 100%;
+    position: relative;
+    font-size: 1.7rem;
+    .nav{
+        width: 100%;
+        height: 40px;
+    }
+    .touxiang{
+        background-color: #fff;
+        border-bottom: 1px solid #e2e3e3;
+        a{
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #e2e3e3;
+            font-size: 1.6rem;
+            padding: 3%;
+            box-sizing: border-box;
+            color: #000;
+            position: relative;
+            .baseright{
+                width: 35%;
+                display: inline-block;
+                float: right;
+                text-align: right;
+                img{
+                   display: inline-block; 
+                   vertical-align: middle;
+                }
+            }
+            .baseright:after{
+                content: '';
+                width: 10%;
+                height: 1.5rem;
+                line-height: 1.6rem;
+                display: inline-block;
+                background: url(../img/my-4.png) center no-repeat;
+                background-size: 100%;
+                margin-left: 5%;
+            }
+            .right1{
+                img{
+                    width: 60%;
+                }
+            }
+            .right2{
+                img{
+                    width: 30%;
+                }
+            }
+        }
+        a:nth-of-type(1){
+            span{
+                display: inline-block;
+                margin-top: 7%; 
+            }
+            .baseright:after{
+                margin-top: 23%;
+            }
+        }
+        a:nth-of-type(2).baseright:after,a:nth-of-type(4){
+            .baseright:after{
+                vertical-align: middle;
+            }
+        }
+        a:nth-of-type(3){
+            .baseright:after{
+                background: none;
+            }
+        }
+    }
+    .pass{
+        margin-top: 3%;
+        border-top: 1px solid #e2e3e3;
+        a:nth-of-type(1){
+            span{
+                margin: 0;
+            }
+        }
+        a:after{
+            content: '';
+            width: 5%;
+            height: 1.5rem;
+            display: inline-block;
+            float: right;
+            background: url(../img/my-4.png) right center no-repeat;
+            background-size: 70%;
+        }
+    }
+}
+//姓名页
+.inputname{
+    width: 95%;
+    margin: 3% auto;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    input{
+        border: 0;
+        padding: 3% 0;
+        width: 95%;
+        margin: auto;
+        display: block;
+        font-size: 1.6rem;
+    }
+}
+.tijiao{
+    width: 80%;
+    margin: 20% auto 0;
+    display: block;
+    border-radius: 7px;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    padding: 3%;
+    text-align: center;
+    background-color: #ec9119;
+    letter-spacing: 2rem;
+    text-indent: 2rem;
+}
+//联系页
+.homeheader{
+    p{
+        a:nth-of-type(3){
+            background: none;
+            color: #FFFFFF;
+            width: 9%;
+            font-size: 1.5rem;
+        }
+    }
+}
+//联系页改
+.edi{
+    width: 95%;
+    margin: auto;
+    border: 1px solid #E4E5E6;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 3%;
+    label{
+        height: 40px;
+        display: block;
+        font-size: 1.6rem;
+        line-height: 40px;
+        margin: 1% 0;
+        padding: 0 3%;
+        input{
+            width: 30%;
+            border: 0;
+            margin-left: 3%;
+        }
+        .code{
+            float: right;
+            display: inline-block;
+            height: 100%;
+            background-color: #31c18d;
+            color: #fff;
+            padding: 0 3%;
+            border-radius: 5px;
+        }
+    }
+    label:first-child{
+        border-bottom: 1px solid #ebeced;
+    }
+}
+//密码修改页
+.old_password{
+    width: 95%;
+    margin: auto;
+    border: 1px solid #E4E5E6;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 3%;
+    font-size: 1.6rem;
+    label{
+        display: block;
+        padding: 3%;
+        input{
+            width: 75%;
+            text-align: center;
+            border: 0;
+            font-size: 1.6rem;
+            float: right;
+        }
+        
+    }
+    .newpass{
+            border-bottom: 1px solid #ebeced;
+        }
+}
+.node{
+    width: 95%;
+    margin: auto;
+    margin-top: 3%;
+    color: #747576;
+}
+.passok{
+    position: fixed;
+    bottom: 10%;
+    margin-left: 7%;
+}
+// 我能供应页
+.pro{
+    label{
+        color: #b2b2b4;
+        input{
+            text-align: left;
+        }
+    }
+    textarea{
+        width: 90%;
+        height: 5rem;
+        margin: auto;
+        resize: none;
+        border: 0;
+        display: block;
+        font-size: 1.7rem;
+        margin: 3% ;
+        box-sizing: border-box;
+    }
+}
+.pictice{
+    color: #b2b2b4;
+    width: 95%;
+    margin: auto;
+    margin-top: 3%;
+    input{
+        display: none;
+    }
+    .clickacc{
+        display: inline-block;
+        width: 20%;
+        margin-top: 3%;
+        background: url(../img/prive-1.png) center no-repeat;
+        background-size: 50%;
+        background-color: #fff;
+    }
+}

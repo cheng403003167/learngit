@@ -1,0 +1,118 @@
+.conn {
+  margin-top: 3%;
+  background-color: #FFFFFF;
+  border-top: 1px solid #f1f2f3;
+}
+.conn a {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  border-bottom: 1px solid #f1f2f3;
+  font-size: 1.6rem;
+  padding: 0 3%;
+  color: #000;
+}
+.conn a span {
+  float: right;
+}
+.ar:after {
+  content: '';
+  display: inline-block;
+  width: 2%;
+  height: 40px;
+  float: right;
+  background: url(../img/my-4.png) center no-repeat;
+  background-size: 100%;
+}
+.aboutour {
+  font-size: 1.6rem;
+  margin: 3%;
+}
+.questry {
+  margin: 3%;
+  font-size: 1.6rem;
+}
+#opinionmain {
+  height: 100%;
+  font-size: 1.6rem;
+}
+.opinion {
+  height: 30%;
+}
+.opinion textarea {
+  width: 94%;
+  height: 100%;
+  background-color: #fff;
+  border: 0;
+  padding: 3%;
+  font-size: 1.6rem;
+  outline: none;
+  border-bottom: 1px solid #ecedee;
+  resize: none;
+}
+.upop {
+  width: 80%;
+  margin: auto;
+  padding: 3%;
+  color: #FFF;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10%;
+  background-color: #EF9119;
+}
+.help {
+  width: 60%;
+  margin: 20% auto;
+  font-size: 1.1rem;
+  text-align: center;
+  background: url(../img/kefu.png) center top no-repeat;
+  background-size: 30%;
+}
+.help a {
+  width: 40%;
+  margin: auto;
+  padding: 3%;
+  display: block;
+  font-size: 1.3rem;
+  color: #fff;
+  border-radius: 5px;
+  background: url(../img/help-1.png) 16% center no-repeat;
+  background-size: 17%;
+  text-indent: 1.5rem;
+  background-color: #63b8fb;
+}
+.xiao {
+  padding-top: 31%;
+}
+.da {
+  font-size: 2.2rem;
+}
+.oftenpro p {
+  padding: 3%;
+  font-size: 1.4rem;
+  color: #a9aaab;
+}
+.oftenpro .prolist {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #f1f2f3;
+}
+.oftenpro .prolist a {
+  display: block;
+  border-top: 1px solid #f1f2f3;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.6rem;
+  padding: 0 3%;
+  color: #000;
+}
+.oftenpro .prolist a:after {
+  content: '';
+  display: inline-block;
+  float: right;
+  width: 3%;
+  height: 100%;
+  background: url(../img/my-4.png) center no-repeat;
+  background-size: 100%;
+}
+/*# sourceMappingURL=jihe.css.map */

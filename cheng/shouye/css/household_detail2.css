@@ -1,0 +1,168 @@
+#main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+}
+#main .top {
+  overflow: hidden;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 97%, rgba(0, 0, 0, 0.1) 100%);
+}
+#main .top .nav {
+  width: 100%;
+}
+#main .top .nav .sellheader {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+}
+#main .top img {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 3%;
+}
+#main .name {
+  margin: 3%;
+}
+#main .name img {
+  width: 20%;
+  float: left;
+  margin-right: 3%;
+}
+#main .name .drc {
+  overflow: hidden;
+  width: 50%;
+}
+#main .name .drc p:nth-of-type(1) {
+  font-size: 1.7rem;
+}
+#main .name .drc p:nth-of-type(2) span:nth-of-type(1) {
+  color: red;
+  font-size: 1.5rem;
+  margin-right: 5%;
+}
+#main .name .drc p:nth-of-type(2) span:nth-of-type(2) {
+  text-decoration: line-through;
+}
+#main .deal {
+  margin: 3%;
+  font-size: 1.5rem;
+}
+#main .deal a {
+  display: inline-block;
+  padding: 1% 3%;
+  margin: 2% 3%;
+  border: 1px solid #ddd;
+}
+#main .num {
+  margin: 3%;
+  font-size: 1.5rem;
+}
+#main .num a {
+  display: inline-block;
+  padding: 1% 3%;
+  margin: 2% 3%;
+  border: 1px solid #ddd;
+}
+#main .num span {
+  padding: 1.5% 3%;
+  border: 1px solid #ccc;
+}
+#main .foot {
+  height: 60px;
+  background-color: #fff;
+}
+#main .foot .inn {
+  width: 100%;
+  height: 60px;
+  padding: 0 2.5%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  text-align: center;
+}
+#main .foot .inn a {
+  width: 30%;
+  margin: auto;
+  display: inline-block;
+  padding: 1%;
+  vertical-align: middle;
+  background-color: #ec9119;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2rem;
+  text-indent: 2rem;
+}
+#main .foot .inn:after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+#main .share {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+#main .share .sharecon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 37%;
+  background-color: #fff;
+  text-align: center;
+}
+#main .share .sharecon .sharetop {
+  font-size: 2rem;
+  padding: 2%;
+}
+#main .share .sharecon .shareposition {
+  height: 50%;
+}
+#main .share .sharecon .shareposition a {
+  display: inline-block;
+  width: 33.333333333333336%;
+  height: 100%;
+  float: left;
+  color: #000;
+  font-size: 1.5rem;
+}
+#main .share .sharecon .shareposition a:before {
+  content: '';
+  width: 50%;
+  height: 70%;
+  display: block;
+  margin: auto;
+  background: url(../img/selldetail-8.png) left no-repeat;
+  background-size: 300%;
+}
+#main .share .sharecon .shareposition a:nth-of-type(2):before {
+  background-position: center;
+}
+#main .share .sharecon .shareposition a:nth-of-type(3):before {
+  background-position: right;
+}
+#main .share .sharecon .shareCancel {
+  width: 80%;
+  margin: 3% auto 0;
+  display: block;
+  font-size: 2rem;
+  color: #000;
+  padding: 2%;
+  background-color: #cbcccd;
+  border-radius: 10px;
+  letter-spacing: 2rem;
+  text-indent: 2rem;
+}
+.bgcol1 {
+  background-color: #ec9119;
+  color: #fff;
+}
+.bgcol2 {
+  background-color: #fff;
+  color: #000;
+}
+/*# sourceMappingURL=household_detail2.css.map */

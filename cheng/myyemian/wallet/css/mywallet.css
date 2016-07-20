@@ -1,0 +1,167 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+header {
+  width: 100%;
+  height: 40px;
+  background-color: #f29004;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+header p {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 40px;
+  width: 97%;
+  margin: auto;
+}
+header p a {
+  display: inline-block;
+}
+header p a:nth-of-type(1) {
+  float: left;
+  width: 10%;
+  height: 40px;
+  background: url(../img/dl-4.png) no-repeat;
+  background-size: 35% 60%;
+  background-position: left center;
+}
+header p a:nth-of-type(2) {
+  width: 10%;
+  height: 40px;
+  float: right;
+  color: #fff;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+#denglu {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+#denglu .nav {
+  width: 100%;
+  height: 40px;
+}
+#denglu .conn .logo {
+  width: 26%;
+  margin: 17% auto 5%;
+}
+#denglu .conn .mybalance {
+  text-align: center;
+  margin-bottom: 10%;
+}
+#denglu .conn .mybalance .balance {
+  font-size: 1.3rem;
+  color: #979899;
+}
+#denglu .conn .mybalance .balancenum {
+  font-size: 4rem;
+  color: #000;
+}
+#denglu .conn .toUp {
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #e6e7e8;
+  border-radius: 10px;
+}
+#denglu .conn .toUp p {
+  height: 40px;
+  line-height: 40px;
+  margin: 0 3%;
+  color: #000;
+  font-size: 1.3rem;
+}
+#denglu .conn .toUp p span {
+  width: 20px;
+  height: 100%;
+  margin: 0 3%;
+  float: right;
+  background: url(../img/mywallet-3.png) right center no-repeat;
+  background-size: 200%;
+}
+#denglu .conn .toUp .top1 {
+  border-bottom: 1px solid #e6e7e8;
+}
+#denglu .conn .toUp p:before {
+  content: '';
+  width: 25px;
+  height: 100%;
+  margin: 0 3%;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/mywallet-2.png) right center no-repeat;
+  background-size: 200%;
+}
+#denglu .conn .toUp .top2:before {
+  background-position-x: left;
+}
+#denglu .conn .act {
+  width: 85%;
+  height: 45px;
+  display: block;
+  text-align: center;
+  line-height: 45px;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1.5rem;
+  margin: 3% auto;
+  border-radius: 5px;
+  background-color: #31C18D;
+}
+.upwallet {
+  width: 100%;
+  margin: 3% auto;
+  background-color: #fff;
+  border: 1px solid #e6e7e8;
+}
+.upwallet p {
+  height: 50px;
+  padding: 0 3%;
+  line-height: 40px;
+  color: #000000;
+  font-size: 1.6rem;
+}
+.upwallet .upwallettop1 {
+  border-bottom: 2px solid #e6e7e8;
+}
+.upwallet .upwallettop1:before {
+  content: '';
+  width: 35px;
+  height: 100%;
+  margin-right: 3%;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/mywallet-2.png) right center no-repeat;
+  background-size: 200%;
+}
+.upwallet .upwallettop2 input {
+  width: 50%;
+  height: 100%;
+  border: 0;
+  font-size: 1.6rem;
+  margin-left: 5%;
+}
+.billcon > div {
+  font-size: 1.6rem;
+}
+.billcon > div .month {
+  padding: 3%;
+}
+.billcon > div .updown {
+  background-color: #fff;
+}
+.billcon > div .updown div {
+  padding: 3%;
+}
+.billcon > div .updown div .youf span {
+  float: right;
+}
+.billcon > div .updown .billup {
+  border-bottom: 1px solid #e8e9e9;
+}
+/*# sourceMappingURL=mywallet.css.map */

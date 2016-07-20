@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的钱包</title>
+		<link rel="stylesheet" type="text/css" href="../css/rest.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myaddess.css"/>
+		<link rel="stylesheet" type="text/css" href="css/addess_edi.css"/>
+	</head>
+	<body>
+		<div id="addessedi">
+			<div class="nav">
+				<header>
+					<p class="clearfix">
+						<a href="myaddess.html"></a>
+						收货地址
+						<a href="javascript:void(0)">编辑</a>
+					</p>
+				</header>
+			</div>
+			<div class="conn">
+				<p>收货人姓名
+					<input type="text" />
+				</p>
+				<p>联系电话
+					<input type="text" />
+				</p>
+				<p>城市：
+					<a href="javascript:void(0)" class="citys">
+						<span class="q1">选择</span>省级<span class="arrdo"></span>
+						<span class="q2">选择</span>城市<span class="arrdo"></span>
+						<span class="q3">选择</span>区<span class="arrdo"></span>
+					</a>
+				</p>
+				<p>
+					<input type="text" placeholder="小区、街道、门牌等详细信息"/>
+				</p>
+				<p>
+					设为默认地址
+					<a href="javascript:void(0)" class="kuai"></a>
+				</p>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="ins">
+				<a href="javascript:void(0)">确认</a>
+			</div>
+		</div>
+		<div class="secity">
+			<div class="ever">
+				<p class="besel"></p>
+				<p class="cell"><a href="javascript:void(0)" class="quiciao">取消</a><a href="javascript:void(0)" class="queren">确认</a></p>
+				<ul class="everycity">
+					<li id="sheng"></li>
+					<li class="stext"><span>省</span></li>
+					<li id="shi"></li>
+					<li class="stext"><span>市</span></li>
+					<li id="qui"></li>
+					<li class="stext"><span>区</span></li>
+				</ul>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="../../登陆/js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/china.js"></script>
+		<script type="text/javascript" src="js/myaddress_edi.js"></script>
+		<script type="text/javascript">
+			var chinaArea = JSON.parse(chinaArea);
+			var sheng = document.getElementById('sheng');
+			var shi = document.getElementById('shi');
+			var qui = document.getElementById('qui');
+			var besel = document.querySelector('.besel');
+			var tops = besel.offsetTop;
+			var beselbo = besel.getBoundingClientRect().bottom;
+			var provincelist = chinaArea.china.province;
+			var provinceSpan = '',oy = 0,ny = 0,fy = 0,shengtop = 0,shiSpan = '',e = {},shuheight = 0;
+			for(var i=0;i<provincelist.length;i++){
+				provinceSpan += '<span>'+provincelist[i]['-name']+'</span>';
+			}
+			sheng.innerHTML = provinceSpan;
+			sheng.style.top = 80+'px';
+			shi.style.top = 80+'px';
+			function starte(e){
+				var e = e || window.event;
+				oy = e.touches[0].clientY;
+				shengtop = this.offsetTop;
+				shuheight = this.offsetHeight;
+				e.preventDefault();
+			}
+			function moves(e){
+				var e = e || window.event;
+				ny = e.changedTouches[0].clientY;
+				if(this.offsetTop>=80&&ny-oy>0){
+					this.style.top = 80+'px';
+				}
+				if(this.offsetTop<=(-shuheight+120)&&(ny-oy<0)){
+					this.style.top = -shuheight+120 + 'px';
+				}else{
+					this.style.top = shengtop+ ny-oy+'px';
+					if(this.offsetTop>80){
+						this.style.top = 80+'px';
+					}else if(this.offsetTop<(-shuheight+120)){
+						this.style.top = -shuheight+120 + 'px';
+					}
+				}
+			}
+			function ends(e){
+				var ovsheng = this.offsetTop;
+				var mo = 0,t = 1;
+				if(ovsheng<0){
+					ovsheng = Math.abs(ovsheng);
+					t = -1
+				}
+				var spindex = parseInt(ovsheng/40);
+				mo = ovsheng%40;
+				if(mo<20){
+					this.style.top = t*spindex*40+'px';
+				}else{
+					this.style.top = t*(spindex+1)*40+'px';
+				}
+				if(this.id == 'sheng'){
+					shidata();
+					shidata2();
+					shi.style.top = 80+'px';
+					qui.style.top =  80+'px';
+				}else if(this.id == 'shi'){
+					shidata2();
+					qui.style.top =  80+'px';
+				}
+			}
+			sheng.addEventListener('touchstart',starte,false,e);
+			sheng.addEventListener('touchmove',moves,false,e);
+			sheng.addEventListener('touchend',ends,false,e);
+			shi.addEventListener('touchstart',starte,false,e);
+			shi.addEventListener('touchmove',moves,false,e);
+			shi.addEventListener('touchend',ends,false,e);
+			qui.addEventListener('touchstart',starte,false,e);
+			qui.addEventListener('touchmove',moves,false,e);
+			qui.addEventListener('touchend',ends,false,e);
+			var shengindex = 0;
+			function shidata(){
+				shi.innerHTML = '';
+				shengindex = Math.abs((sheng.offsetTop-80)/40);
+				var frag = document.createDocumentFragment();
+				for(var j=0;j<provincelist[shengindex].city.length;j++){
+					shiSpan = document.createElement("span");
+					shiSpan.innerHTML = provincelist[shengindex].city[j]['-name'];
+					frag.appendChild(shiSpan);
+				}
+				shi.appendChild(frag);
+			}
+			var shiindex = 0;
+			function shidata2(){
+				qui.innerHTML = '';
+				shiindex = Math.abs((shi.offsetTop-80)/40);
+				var frag = document.createDocumentFragment();
+				for(var k=0;k<provincelist[shengindex].city[shiindex].county.length;k++){
+					quiSpan = document.createElement("span");
+					quiSpan.innerHTML = provincelist[shengindex].city[shiindex].county[k]['-name'];
+					frag.appendChild(quiSpan);
+				}
+				qui.appendChild(frag);
+				qui.style.top = 80+'px';
+			}
+			var quix = document.querySelector(".quiciao");
+			var sel = document.querySelector('.secity');
+			var queren = document.querySelector('.queren');
+			var q1 = document.querySelector('.q1');
+			var q2 = document.querySelector('.q2');
+			var q3 = document.querySelector('.q3');
+			var citys = document.querySelector('.citys');
+			citys.onclick = function(){
+				sel.style.display = 'block';
+				shidata();
+				shidata2();
+			}
+			quix.onclick = function(){
+				sel.style.display = 'none';
+			}
+			queren.onclick = function(){
+				q1.innerHTML = provincelist[shengindex]['-name'];
+				q2.innerHTML = provincelist[shengindex].city[shiindex]['-name'];
+				q3.innerHTML = provincelist[shengindex].city[shiindex].county[Math.abs((qui.offsetTop-80)/40)]['-name'];
+				sel.style.display = 'none';
+			}
+		</script>
+	</body>
+</html>

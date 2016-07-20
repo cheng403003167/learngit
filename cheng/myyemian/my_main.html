@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的</title>
+		<link rel="stylesheet" href="css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="../shouye/css/gong.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my_main.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<img src="img/my-2.png" class="topbg"/>
+			<div class="userpic">
+				<img src="img/my-3.png" alt="" />
+				<p>凯丽_Kylie</p>
+			</div>
+		</div>
+		<div class="baseinfo">
+			<a href="baselnfo/mybase.html"><span>基本资料</span></a>
+			<a href="case/mycast.html"><span>我的订单</span></a>
+			<a href="collect/mycollect.html"><span>我的收藏</span></a>
+			<a href="wallet/mywallet.html"><span>我的钱包</span></a>
+			<a href="addresss/myaddess.html"><span>收货地址</span></a>
+			<a href="../shouye/beforvip.html"><span>升级会员</span></a>
+		</div>
+		<div class="baseinfo set">
+			<a href="moreless/more.html"><span>更多</span></a>
+			<a href="javascript:void(0)"><span>注销</span></a>
+		</div>
+		<footer>
+			<div class="inn clearfix">
+				<a href="../shouye/home.html" class="textcol1"><span>首页</span></a>
+				<a href="javascript:void(0)" class="textcol1"><span>会员杂锦</span></a>
+				<a href="javascript:void(0)" class="textcol1"><span>分类</span></a>
+				<a href="javascript:void(0)" class="textcol1"><span>购物车</span></a>
+				<a href="my_main.html" class="textcol2"><span>我的</span></a>
+			</div>
+		</footer>
+		<script type="text/javascript" src="../shouye/js/jquery-1.11.0.js"></script>
+		<script>
+			$('footer .inn a').on('click',function(){
+				$(this).removeClass().addClass("textcol2").siblings("a").removeClass().addClass("textcol1");
+			})
+		</script>
+	</body>
+</html>
