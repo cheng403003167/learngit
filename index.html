@@ -5,12 +5,15 @@
 		<title>跳转</title>
 	</head>
 	<body>
+		<a href="javascript:void(0)">onloading</a>
 		<script>
-			setTimeout(function(){
-				var scr = document.createElement("script");
-				scr.src = "cheng/denglu/index.html";
-				document.querySelector("body").appendChild(scr);
-			},1000)
+			document.querySelector("body a").onclick = function(){
+				location.href = "cheng/denglu/index.html";
+			}
+			window.onload = function(){
+				document.querySelector("body a").onclick();
+			}
+			
 		</script>
 	</body>
 </html>
